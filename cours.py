@@ -42,10 +42,12 @@ user = {
    "nom  ": "dupond",
    "prenom":"jean",
    "age":39
-}
-print(user)["age"]
+} 
 print(user)
 
 "nom"in user
 
 print in(user)
+#verrifier la fin d'un document
+fin=("image.png")
+fin.endswith(".png")
