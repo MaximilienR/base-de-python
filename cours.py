@@ -51,3 +51,20 @@ print in(user)
 #verrifier la fin d'un document
 fin=("image.png")
 fin.endswith(".png")
+
+#la fonction match ! le "_" veut dire les cas n'ont définit 
+
+poste = "cjanteur"
+ 
+
+match poste:
+   case"employe":
+      print("1200")
+   case"mangeur":
+      print("2000")
+   case"director":
+      print("3000")
+   case _:
+      print("aucun resultat ")
+      
+   
