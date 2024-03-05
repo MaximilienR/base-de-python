@@ -35,3 +35,11 @@ while place_prise<place_cine:
       place_prise+=1
 print(place_prise)
 
+users=["pierre","paul","jack"]
+#verifier si un élement est présent dans une liste
+def lapelle():
+    if"jean" in users:
+        print("pierre est présent dans la liste")
+    else:
+        print("cette personne n'est pas présent dans la liste")
+lapelle()

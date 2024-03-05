@@ -41,6 +41,9 @@ ma_liste_2=[5,1,3]
 del ma_liste_2[1]
 print(ma_liste[0])
 ma_liste[0]="fraise"
+#ajout
+ma_liste.append("kiwi")
+
 print(ma_liste)
 print(ma_liste_2)
  
