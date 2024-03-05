@@ -69,7 +69,7 @@ fin.endswith(".png")
 
 #la fonction match ! le "_" veut dire les cas n'ont définit 
 
-poste = "cjanteur"
+poste = "chanteur"
  
 
 match poste:

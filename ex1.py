@@ -34,3 +34,10 @@ place_prise=10
 while place_prise<place_cine:
       place_prise+=1
 print(place_prise)
+
+#pyramide 
+
+nbrPierre=0
+def creatPyramide() 
+for nbr in range:
+    
