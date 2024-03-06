@@ -6,3 +6,5 @@ def print_diamond(rows):
              print(" "*(rows-i) + "*"*(2*i-1))
 
 print_diamond(5)
+
+ 
