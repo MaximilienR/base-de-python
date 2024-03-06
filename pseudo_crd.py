@@ -10,7 +10,7 @@ MENU="""Veuillez choisir l'une des options suivantes:
      2 : Afficher la liste 
      3 : Vider la liste
      4. Quitter
-        Choix séléectioné: """
+        Choix séléectioné:-> """
         
 CHOICES_MENU=["1","2","3","4","5"]
  
