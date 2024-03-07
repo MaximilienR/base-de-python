@@ -9,7 +9,7 @@ MENU="""Veuillez choisir l'une des options suivantes:
      1 : Ajouter un élément à la liste
      2 : Afficher la liste 
      3 : Vider la liste
-     4. Quitter
+     4 : Quitter
         Choix séléectioné:-> """
         
 CHOICES_MENU=["1","2","3","4","5"]
