@@ -44,7 +44,7 @@ def lapelle():
         print("cette personne n'est pas présent dans la liste")
 lapelle()
 """
-#nettoyer le code existant et corriger les bus 
+#nettoyer le code existant et corriger les bug 
 
 class Personne:
     def __init__(self,nom:str,age:int,genre:bool):
