@@ -1,3 +1,4 @@
+ 
 #exemple de création d'un objet en Python :
 
 class Personne:
@@ -8,6 +9,7 @@ class Personne:
      def presentation(self):
              print(f"bonjour je m'appel  {self.nom} et j'ai   {self.age} ans")
  
+ #self==this. 
     
 
 # Création d'un objet de la classe Personne

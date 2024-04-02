@@ -11,7 +11,6 @@ connexion=mysql.connector.connect(
 )
 
 #create
-
 def create_user(name,email):
     cursor=connexion.cursor()
     cursor.execute("""
@@ -21,8 +20,6 @@ def create_user(name,email):
     connexion.commit()
     print("connexion ok")
     
-   
-
 create_user("random","r@gmail.com")
 
 #read

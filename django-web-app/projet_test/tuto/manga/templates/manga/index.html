@@ -1,0 +1,32 @@
+{%  load static %}
+{%  load customtags%}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma page HTML</title>
+    <link rel="stylesheet" href={% static "manga/css/style.css" %}>
+    
+</head>
+<body>
+
+<h1>Bienvenue sur ma page HTML</h1>
+    <p>Ceci est un exemple de page HTML </p>
+    <p>{% hello_world username %}
+    <p>{{message}}</p>
+
+    {% comment %}
+       <p>ceci est la façon de faire pour mettre en commentaire sur djangi </p>
+    {% endcomment %}
+    {% comment %} ceci est un moyen de generer un texte aleatoire {% endcomment %}
+    {% lorem 5 p random %}
+
+    {%now "d/m/Y"%}
+
+    <ul>
+        {%for u in userList%}
+            <li>{{u}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
