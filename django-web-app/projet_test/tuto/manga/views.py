@@ -1,7 +1,8 @@
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404,redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Book
+from .models import Book,Author
+from .forms import SomeForm
 
 def index(request):
     context={
@@ -22,4 +23,21 @@ def book(request):
         }
     template= loader.get_template('manga/book.html')
     return HttpResponse(template.render(context,request))
- 
+
+def form(request):     
+    if request.method == 'POST':
+     # créer une instance de notre formulaire et le remplir avec les données POST
+        print('Les données POST sont : ', request.POST)
+        form = SomeForm(request.POST)
+    
+         
+
+        
+    else:
+ # ceci doit être une requête GET, donc créer un formulaire vide
+        form = SomeForm()
+
+    return render(request,
+        'manga/form.html',
+        {'form': form})
+    

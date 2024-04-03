@@ -5,5 +5,6 @@ app_name="manga"
 urlpatterns = [
     path('',views.index, name='index'),
     path('<int:book_id>',views.show, name='show'),
-    path('book',views.book,name='book')
+    path('book',views.book,name='book'),
+    path('form',views.form, name="form")
 ]
