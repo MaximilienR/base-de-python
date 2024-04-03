@@ -8,7 +8,6 @@ def index(request):
         "message":"ceci est un test d'injection de contexte",
         "userList":["Foo","BAR","BAZ"],
         "username":"Smith",
-        "books": Book.objects.all()
         }
     template= loader.get_template('manga/index.html')
     return HttpResponse(template.render(context,request))
@@ -19,9 +18,8 @@ def show(request,book_id):
  
 def book(request):
     context={
-        "message":"ceci est un test d'injection de contexte",
-        "username":"Smith",
-        "books": Book.objects.all()
+         "books": Book.objects.all().order_by("title")
         }
     template= loader.get_template('manga/book.html')
     return HttpResponse(template.render(context,request))
+ 
