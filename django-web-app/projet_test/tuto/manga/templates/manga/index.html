@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<h1>Bienvenue sur ma page HTML</h1>
-    <p>Ceci est un exemple de page HTML </p>
-    <p>{% hello_world username %}
+<h1>Bienvenue sur ma top manga</h1>
+ 
+    <p>{% hello_world username %}     {%now "d/m/Y"%} </p>
     <p>{{message}}</p>
 
     {% comment %}
@@ -21,18 +21,14 @@
     {% comment %} ceci est un moyen de generer un texte aleatoire {% endcomment %}
     {% lorem 5 p random %}
 
-    {%now "d/m/Y"%}
 
+        <h2>vos dernier livre consultés</h2>
     <ul>
         {%for u in userList%}
             <li>{{u}}</li>
         {% endfor %}
     </ul>
-
-    <ul>
-        {% for book in books%}
-        <li>{{book.title}}</li>
-        {% endfor%}
+  
     </ul>
 </body>
 </html>

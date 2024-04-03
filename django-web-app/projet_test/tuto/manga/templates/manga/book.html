@@ -1,0 +1,8 @@
+ 
+ 
+        <h2>nos livres </h2>
+<ul>
+    {% for book in books%}
+    <li><a href="{%url 'manga:show' book.id %}">{{book.title}}</li>
+    {% endfor%}
+</ul>

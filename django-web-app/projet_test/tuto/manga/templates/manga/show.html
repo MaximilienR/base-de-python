@@ -1,0 +1,20 @@
+{%  load static %}
+{%  load customtags%}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma page HTML</title>
+    <link rel="stylesheet" href={% static "manga/css/style.css" %}>
+    
+</head>
+<body>
+
+<h1>{{book.title}}</h1>
+    <p>Ceci est un exemple de page HTML </p>
+        <span>Quantité : {{book.quantity}}</span>
+        <p><a href="{% url 'manga:index' %}">retour</p>
+
+ 
+</body>
+</html>
