@@ -1,8 +1,20 @@
  
  
         <h2>nos livres </h2>
-<ul>
-    {% for book in books%}
-    <li><a href="{%url 'manga:show' book.id %}">{{book.title}}</li>
-    {% endfor%}
-</ul>
+
+
+<table>
+    <tr>
+      <th>Titre</th>
+      <th>QTE</th>
+      <th>Actions</th>
+    </tr>
+    {% for book in books %}
+    <tr>
+      <td>{{ book.title }}</td>
+      <td>{{book.quantity}}</td>
+      <td><a href="{% url 'manga:show' book.id %}">Voir détails</a></td>
+
+    </tr>
+    {% endfor %}
+  </table>

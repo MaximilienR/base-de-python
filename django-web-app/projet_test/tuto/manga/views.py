@@ -29,7 +29,9 @@ def form(request):
      # créer une instance de notre formulaire et le remplir avec les données POST
         print('Les données POST sont : ', request.POST)
         form = SomeForm(request.POST)
-    
+
+        if form.is_valid():
+            return redirect("manga.index")
          
 
         
