@@ -1,6 +1,13 @@
 
 {%  load static %}
 {%  load customtags%}
+{% if user.is_authenticated%}
+    <p>connecté sous {{user.username}} | <a href="{% url 'accounts:logout_user'%}">deconnexion</a></p>
+{% else %}
+    <p><a href="{% url 'accounts:login_user'%}">Connexion </a></p>
+    <p><a href="{% url 'accounts:register_user'%}">inscription </a></p>
+
+{% endif %}
 
  <!DOCTYPE html>
 <html lang="en">
