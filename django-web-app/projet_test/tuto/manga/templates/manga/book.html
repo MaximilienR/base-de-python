@@ -8,13 +8,16 @@
       <th>Titre</th>
       <th>QTE</th>
       <th>Actions</th>
+      
     </tr>
     {% for book in books %}
     <tr>
       <td>{{ book.title }}</td>
       <td>{{book.quantity}}</td>
       <td><a href="{% url 'manga:show' book.id %}">Voir détails</a></td>
-
+      <td><a href="">modifier</td>  
+      <td><a href="{% url 'manga:delete' book.id %}">supprimer</td>    
+      <td><a href="{% url 'manga:add'  %}">Ajouter</td>    
     </tr>
     {% endfor %}
   </table>
