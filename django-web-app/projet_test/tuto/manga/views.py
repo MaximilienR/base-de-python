@@ -32,11 +32,19 @@ def show(request,book_id):
      return render(request,"manga/show.html",context)
  
  
-def edit(request):
-    book=Book.objects.get(title="random")
-    book.title="db super"
-    book.save()
-    return redirect('manga:index')
+def edit(request,book_id):
+    book=Book.objects.get(pk=book_id)
+
+    if request.method == "POST":
+        form = BookForm(request.POST,instance=book)
+        
+        if  form.is_valid():
+                form.save()
+                return redirect('manga:index')
+    else:
+        form = BookForm(instance=book)
+        
+    return render(request, "manga/book-form.html", {"form": form})
 
 def remove(request,book_id):
     book=Book.objects.get(pk=book_id)
