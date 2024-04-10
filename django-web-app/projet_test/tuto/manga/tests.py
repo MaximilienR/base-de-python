@@ -10,4 +10,4 @@ class AuthorTestCase(TestCase):
     
     def test_existe(self):
         author =Author.objects.get(pk=1)
-        self.assertFalse(author)
+        self.assertTrue(author)

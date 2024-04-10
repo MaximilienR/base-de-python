@@ -24,7 +24,7 @@ print ('bonjour '+ ' '+ identity+f'content de te voir');
 
 "bonjour".replace("jour","soir")
 #utiliser les chiffre
-grandFrere =int(2)
+grandFrere =int(6)
 petitFrere = int(5)
 ageTT= grandFrere+petitFrere
 print(ageTT)
@@ -86,4 +86,26 @@ match poste:
       print("aucun resultat ")
     
       
-  
+  #boucle 
+#Voici un exemple de boucle en Python utilisant une boucle for pour afficher les nombres de 1 à 5 :
+
+ 
+for i in range(1, 6):
+     print(i)
+ 
+ #objet 
+ 
+class Voiture:
+     def __init__(self, marque, modele, annee):
+             self.marque = marque
+             self.modele = modele
+             self.annee = annee
+
+     def afficher_infos(self):
+             print(f"Marque : {self.marque}, Modèle : {self.modele}, Année : {self.annee}")
+
+# Création d'une instance de la classe Voiture
+ma_voiture = Voiture("Toyota", "Corolla", 2020)
+
+# Appel de la méthode afficher_infos pour afficher les informations de la voiture
+ma_voiture.afficher_infos()
